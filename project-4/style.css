@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero_section {
+    min-height: 100vh;
+    background-image: url(images/developer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.intro_text h2, .intro_text h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.intro_text .lg_text {
+    font-size: 35px;
+}
+
+.intro_text h1 {
+    letter-spacing: 1.8px;
+}
+
+.black_box {
+    background-color: black;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.black_box h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.black_box h2 > .lg {
+    font-size: 72px;
+    font-weight: 400;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 70px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card_box {
+    max-width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid rgba(0, 0, 0, 0.235);
+    padding: 10px;
+    transition: .5s ease-in;
+}
+
+.card_box:hover {
+    transform: scale(1.01);
+    transition: .5s ease-in-out;
+}
+
+.card_img img {
+    width: 100%;
+}
+
+.card_text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+
+.card_text p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 8px;
+    letter-spacing: 1.1px;
+    line-height: 1.4;
+}
+
+.bottom {
+    display: flex;
+    color: #fff;
+}
+
+.bottom .contact {
+    background-color: #515603;
+}
+
+.bottom .about {
+    background-color: #722300;
+}
+
+.bottom .content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bottom .contact h2, .bottom .about h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.bottom .contact p, .bottom .about p {
+    /* text-transform: capitalize; */
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 1.1px;
+}
+
+.bottom .contact a, .bottom .about a {
+    color: yellow;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero_section {
+        max-height: 40vh;
+    }
+
+    .black_box h2 {
+        font-size: 24px;
+    }
+
+    .black_box h2 .lg {
+        font-size: 35px;
+    }
+
+    .cards {
+        max-width: 700px;
+        justify-items: center;
+        gap: 28px 0;
+    }
+
+    .card_text h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .card_text p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .bottom .contact h2, .bottom .about h2 {
+        font-size: 27px;
+    }
+
+    .bottom .contact p, .bottom .about p {
+        font-size: 9px;
+    }
+
+    .bottom .contact a, .bottom .about a {
+        font-size: 9px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .intro_text h2, .intro_text h1 {
+        font-size: 17px;
+    }
+
+    .intro_text .lg_text {
+        font-size: 25px;
+    }
+}

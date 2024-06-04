@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container h1 {
+    margin: 10px 0 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container .sub {
+    font-size: 20px;
+}
+
+.form-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.form-content label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.form-controll {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-controll input, select, input[type="date"], input[type="file"],textarea{
+    padding: 9px 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.form-controll input:focus, textarea:focus {
+    border: 1px solid blue;
+}
+
+.address-area {
+    grid-column: 1 / span 2;
+}
+
+.address-area textarea {
+    width: 100%;
+}
+
+.apply-box {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.apply-box .btn {
+    padding: 7px 25px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: red;
+    color: azure;
+    outline: none;
+    border: 1px solid tomato;
+    transition: .3s ease-in;
+}
+
+.apply-box .btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: .3 ease-out;
+}
+
+@media (max-width: 550px){
+    .form-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

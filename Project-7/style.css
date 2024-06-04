@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.container {
+  display: flex;
+  padding: 0 5px;
+}
+
+.main-container {
+  width: 100%;
+}
+
+
+aside {
+  height: 100vh;  
+  padding: 0 10px;
+  width: 81px;
+}
+
+aside .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 16px;
+  text-align: center;
+  position: fixed;
+}
+
+aside .icons .icon {
+  line-height: 1.1;
+}
+
+aside .icons .icon p {
+  font-size: 9px;
+}
+
+/* Header section css */ 
+header {
+  width: 100%;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo img{
+  width: 96px;
+}
+
+header nav .center {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+header nav #search {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+header nav button {
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+header nav .mic {
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+  background-color: #f0f0f0;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+header nav .right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Tag section css  */
+.tags {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.tag {
+  padding: 5px 17px;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+}
+
+.tags .dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.tags .light {
+  background-color: #f0f0f0;
+}
+
+/* Video container section css */
+.video_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 20px;
+}
+
+.video_content {
+  max-width: 380px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.video_content .thumbnail img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video_content .video_details  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video_content .video_details .video_title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.video_content .video_details .channel_name, .video_details .video_status {
+  font-size: 13px;
+}
+

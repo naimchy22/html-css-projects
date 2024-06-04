@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+/* Global css */
+:root {
+  --lightningColor: #0089B7;
+  --darkColor: #003D62;
+  --darkerColor: #003251;
+  --secondaryColor: #FDFF9E;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header section */
+header {
+  background-color: var(--lightningColor);
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+header nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: .2s ease-out;
+  border-bottom: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+  transition: .4s ease-in;
+}
+
+/* Hero section ======== */
+
+#hero {
+  background-color: var(--darkColor);
+  max-height: 100vh;
+  min-height: 544px;
+  scroll-margin: 55px;
+  border-bottom: 4px solid var(--lightningColor);
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#hero .container .hero_img img {
+  width: 340px;
+  height: 445px;
+  object-fit: contain;
+}
+
+#hero .container .hero_content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+}
+
+#hero .container h1> .hi {
+  color: var(--secondaryColor);
+}
+
+#hero .container h1> .im {
+  font-size: 3rem;
+}
+
+#hero .container h2 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto;  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1rem; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+#project {
+  background-color: var(--darkerColor);
+  color: white;
+  /* overflow: hidden; */
+  scroll-margin: 50px;
+  padding-bottom: 30px;
+}
+
+#project .container h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#project .container .p_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+}
+
+#project .container .p_card {
+  max-width: 320px;
+  max-height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#project .container .p_card img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+#project .p_card:hover img {
+  opacity: .8;
+  transition: .5s ease;
+  scale: 1.01;
+}
+
+#project .p_card .card_content {
+  position: absolute;
+  bottom: -100%;
+  background-color: white;
+  color: var(--darkerColor);
+  width: 100%;
+  padding: 10px 0;
+  transition: .3s ease-in-out;
+  opacity: 0;
+}
+
+#project .p_card:hover .card_content {
+  bottom: 0%;
+  transition: .5s ease;
+  opacity: 1;
+}
+
+#project .p_card .card_content h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#contact {
+  background-color: var(--darkColor);
+  color: white;
+  height: calc(100vh - 58.9px);
+  display: grid;
+  place-items: center;
+}
+
+#contact .contact_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#contact .contact_box h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+#contact .contact_way {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: .3s ease-in-out;
+}
+
+#contact .contact_way .icon, 
+#contact .contact_way h4 {
+  font-size: 3rem;
+}
+
+#contact .contact_way:hover {
+  opacity: .7;
+  transition: .3s ease;
+}
+
+#contact .contact_way h4, .adrate {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#contact .contact_box .contact_top,
+#contact .contact_box .contact_bottom {
+  display: flex;
+  gap: 15px;
+}
+
+footer {
+  background-color: var(--darkerColor);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+
+
