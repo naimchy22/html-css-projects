@@ -1,0 +1,104 @@
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 810px;
+    }
+
+    main .hero .hero_content {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .hero .hero_text, 
+    main .hero .hero_img,
+    main .hero .hero_img img {
+        width: 100%;
+    }
+
+    main .hero .hero_text {
+        align-items: center;
+        padding: 35px 0;
+    }
+
+    main .hero .hero_text h2 {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    main .hero .hero_img img {
+        border-radius: 0rem;
+    }
+
+    main .h_card {
+        border-radius: 0;
+    }
+
+
+    main .v_cards {
+        gap: 10px;
+    }
+
+    main .v_cards .v_card {
+        max-width: 100%;
+    }
+
+    main .v_cards :nth-child(3) {
+        grid-area: 2 / span 2;
+    }
+
+    main .v_cards :nth-child(3) img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    main .h_card .card_content {
+        flex-direction: column-reverse;
+    }
+
+    main .h_card .card_content .card_text,
+    main .h_card .card_content .card_img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    main .h_card .card_img img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    footer {
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    main .v_cards :nth-child(3) {
+        grid-area: 2 / span 1;
+    }
+
+    main .h_card .card_text h3 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 6px;
+    }
+
+    main .v_cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

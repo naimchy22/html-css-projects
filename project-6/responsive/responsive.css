@@ -1,0 +1,173 @@
+@media (max-width: 810px) {
+    /* Header section css */
+    header nav .logo {
+        font-size: 20px;
+    }
+
+    ul a {
+        font-size: 15px;
+    }
+
+    .hero {
+        place-items: start;
+        padding-top: 100px;
+    }
+
+    #music .container .btn {
+        font-size: 20px;
+    }
+
+    #music .container .mobile_ipad_img {
+        top: 427px;
+    }
+
+    .about_music {
+        padding-top: 378px;
+    }
+
+    /* Video section css */
+    h2 {
+        font-size: 18px;
+    }
+
+    .video_sec p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .gift_section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_upper .footer_links {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 428px) {
+    /* Header section css =============== */
+    header .container {
+        position: relative;
+    }
+
+    .menu_icon label {
+        font-size: 22px;
+        color: white;
+        display: block;
+    }
+
+    #three_dot {
+        display: none;
+    }
+
+    .menu_icon .menu_links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        visibility: hidden; 
+        transition: .5s ease-out;
+        opacity: 0;
+    }   
+    
+    .menu_icon input:checked ~ .menu_links  {
+        visibility: visible;
+        transition: .5s ease-in;
+        opacity: 1;
+    }
+
+    .menu_icon .menu_links a {
+        font-size: 14px;
+        color: #0652DD;
+    }
+
+    /* Music section css ================ */
+    #music {
+        height: 416px;
+    }
+
+    .about_music .container {
+        gap: 25px;
+    }
+
+    #music .container h4{
+        font-size: 12px;
+    }
+
+    #music .container .btn {
+        font-size: 10px;
+    }
+
+    #music .container p {
+        font-size: 11px;
+    }
+
+    #music .container .mobile_ipad_img {
+        top: 258px;
+    }
+
+    .about_music {
+        padding-top: 217px;
+    }
+
+    .about_music h3 {
+        font-size: 18px;
+    }
+
+    .about_music .container p {
+        font-size: 8px;
+    }
+
+    .btn2 {
+        font-size: 12px;
+    }
+
+    /* Video section css */
+    h2 {
+        font-size: 14px;
+    }
+
+    .video_sec p {
+        font-size: 8px;
+    }
+
+    .video_sec .container {
+        gap: 15px;
+    }
+
+    /* Gift section css ============= */
+
+    .gift_section img {
+        width: 100%;
+    }
+
+    .gift_section h2 {
+        font-size: 18px;
+    }
+
+    .gift_section p {
+        font-size: 10px;
+    } 
+
+    /* Footer section css ============ */
+
+    .footer_links .link h3 {
+        font-size: 14px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .footer_upper .link ul a {
+        font-size: 12px;
+    }
+
+    .footer_lower {
+        font-size: 12px;
+    }
+}

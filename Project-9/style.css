@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+/* Global css */
+:root {
+  --whiteBackground: #fff;
+  --blackColor: #000;
+  --dividerColor: #ccc;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--blackColor);
+}
+
+.status button {
+  all: unset;
+}
+
+.divider {
+  border: 1px solid var(--dividerColor);
+  margin: 10px 0;
+}
+
+h1,h2,h3,h4,p {
+  color: var(--blackColor);
+}
+
+/* Header section */
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px 5px;
+  background-color: var(--whiteBackground);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h1 {
+  font-size: 2.3rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header nav ul li a{
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--blackColor);
+  transition: .2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 0 5px;
+}
+/* Hero section */
+main .hero {
+  background-color: var(--whiteBackground);
+}
+
+main .hero .hero_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .hero .hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .hero .hero_text h2 {
+  font-size: 6rem;
+}
+
+main .hero .hero_text h4 {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+main .hero .hero_img img {
+  border-radius: 2rem;
+}
+
+/* H-card-1 section */
+main .h_card {
+  background-color: var(--whiteBackground);
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  border: 1px solid #e2e2e2;
+  border-radius: 0 20px 20px 0;
+	overflow: hidden;
+}
+
+main .h_card .card_content {
+	display: flex;
+	justify-content: space-between;
+}
+
+main .h_card .card_text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+main .h_card .card_text h3 {
+  font-size: 2.4rem;
+  color: var(--blackColor);
+}
+
+main .h_card .card_text p {
+  font-size: 1.5rem;
+  color: var(--blackColor);
+}
+
+main .h_card .card_img img {
+  height: 100%;
+}
+
+/* V-card section */
+main .v_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  justify-items: center;
+  /* background-color: var(--whiteBackground); */
+}
+
+main .v_cards .card_content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main .v_cards .v_card {
+  max-width: 340px;
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  border: 1px solid #e2e2e2;
+  background-color: var(--whiteBackground);
+}
+
+main .v_cards .v_card img {
+  width: 100%;
+  height: 100%;
+}
+
+main .v_cards .v_card .card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;  
+}
+
+main .v_cards .v_card h3 {
+  font-size: 2rem;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+main .v_cards .v_card p {
+  font-size: 1.4rem;
+}
+
+/* Footer section css */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+  background-color: var(--whiteBackground);
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* ================ */
+/* POST SECTION CSS */
+/* ================ */
+main .banner_img img {
+  width: 100%;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main .authority_name h3 {
+  font-size: 1.6rem;
+}
+
+main .authority_name h3 .written-date {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: capitalize ;
+}
+
+main article p {
+  font-size: 1.4rem;
+}
+
+main article h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize ;
+}
+
+main article h4 {
+  font-size: 1.8rem;
+}
+
