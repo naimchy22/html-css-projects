@@ -176,7 +176,7 @@ header nav ul li a:hover {
 }
 
 #project .container .p_card img {
-  width: 100%;
+  width: 320px;
   height: 100%;
   opacity: 1;
   transition: .3s ease-in-out;
